@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: url(light-design-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: auto 80vh auto;
+	min-height: 100vh;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+@media (max-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		margin: 0;
+		}
+	nav li {
+		display: inline;
+		}
+	}
+
+header {
+	grid-column: span 2;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 50%;
+	margin: auto;
+	border: 2px solid black;
+	outline: 5px solid Gainsboro;
+	background-color: Gainsboro;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+
+nav {
+	display: block;
+	background-color: #343434;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+nav ul .active {
+	background-color: #6c6c8c;
+	box-shadow: 10px 10px 20px;
+}
+
+nav ul a {
+	color: #000;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+	color: #FFF;
+}
+
+nav li {
+	padding: 1vw;
+}
+
+main {
+	flex: 1;
+	overflow: auto;
+	background-color: #6c6c8c;
+	padding: 15px;
+	font-family: "MS Serif", "New York", serif;
+	box-shadow: 10px 10px 20px;
+}
+
+main h2 {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	border-bottom: 2px solid black;
+}
+
+main a {
+	text-decoration: none;
+	color: indigo;
+	font-weight: bold;
+}
+
+main a:hover {
+	text-decoration: underline;
+}
+
+.resume p {
+	margin-left: 20px;
+}
+
+footer {
+	grid-column: span 2;
+	text-align: center;
+	font-size: .7em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding-top: 20px;
+}
